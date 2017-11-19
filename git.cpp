@@ -13,13 +13,20 @@ int new1(int a, int b, int c)
 
 int main()
 {
-	int a, b , c;
-	setlocale(0, "");
-	cout << "Введите 3 числа." << endl;
-	cin >> a;
-	cin >> b;
-	cin >> c;
-	cout << "Ответ: " << new1(a,b,c) << endl;S
-	system("pause");
+	while (true)
+	{
+		int a, b , c;
+		setlocale(0, "");
+		cout << "Введите 3 числа." << endl;
+		cin >> a;
+		cin >> b;
+		cin >> c;
+		cout << "Ответ: " << new1(a,b,c) << endl;S
+		system("pause");
+		cout << "Хотите выйти ?\n 1 : да\n иначе нет\n";
+		cin>>a;
+		if(a == 1)
+			break;
+	}
 	return 0;
 }
